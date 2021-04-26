@@ -22,6 +22,8 @@ module ArelExtensions
           @return_type = :time
         when :date,'date'
           @return_type = :date
+        when :timestamp,'timestamp'
+          @return_type = :timestamp
         when :binary, 'binary', 'varbinary', 'image'
           @return_type = :binary
         else
